@@ -1,0 +1,40 @@
+.cell {
+  width: 5rem;
+  height: 5rem;
+  position: relative;
+
+  & span {
+    position: absolute;
+    font-size: 1.25rem;
+  }
+}
+
+.figure {
+  width: 5rem;
+}
+
+.white {
+  background: #FFFEE5;
+
+  & span {
+    color: #5D90BF;
+  }
+}
+
+.black {
+  background: #5D90BF;
+
+  & span {
+    color: #FFFEE5;
+  }
+}
+
+.letter {
+  bottom: .25rem;
+  right: .25rem;
+}
+
+.number {
+  top: .25rem;
+  left: .25rem;
+}
