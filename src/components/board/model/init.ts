@@ -1,4 +1,4 @@
-import ICell from './cell.ts'
+import ICell from '../../cell/model/cell.ts'
 
 import letters from './letters.ts'
 
@@ -13,12 +13,8 @@ const init = () => {
         cells[i] = []
 
         for (let j = 0; j < 8; j++) {
-            const letter = letters.get(j)
+            const letter = letters.get(j) as string
             const number = 8 - i
-
-            if (!letter) {
-                return
-            }
 
             const color =
                 (i % 2 === 0 && j % 2 === 0) || (i % 2 !== 0 && j % 2 !== 0) ? 'white' : 'black'

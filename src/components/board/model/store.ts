@@ -1,11 +1,11 @@
 import { create } from 'zustand'
 
-import ICell from './cell.ts'
+import ICell from '../../cell/model/cell.ts'
 
 import init from './init.ts'
 
 interface IState {
-    cells: ICell[][] | undefined
+    cells: ICell[][]
     setCells: (cells: ICell[][] | ((prevState: ICell[][]) => ICell[][])) => void
 }
 

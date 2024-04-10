@@ -2,6 +2,9 @@
   width: 5rem;
   height: 5rem;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   & span {
     position: absolute;
@@ -37,4 +40,15 @@
 .number {
   top: .25rem;
   left: .25rem;
+}
+
+.selected {
+  background: #00000020 !important;
+}
+
+.indicator {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 555rem;
+  background: #00000020;
 }

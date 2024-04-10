@@ -1,5 +1,3 @@
-import ICell from '../../board/model/cell.ts'
-
 class Figure {
     name: string
     color: string
@@ -9,12 +7,6 @@ class Figure {
         this.name = name
         this.color = color
         this.image = image
-    }
-
-    move(initial: ICell, target: ICell) {
-        if (initial !== target) {
-            console.log('moved')
-        }
     }
 }
 
